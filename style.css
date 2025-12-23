@@ -1,21 +1,24 @@
 body {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
+  background: #fffaf3;
+  color: #2f2f2f;
 }
 
+/* HEADER */
 .site-header {
-  min-height: 100vh;
+  min-height: 60vh;
   background: linear-gradient(135deg, #8b0000, #ff4500, #ff8c00);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 40px 20px;
 }
 
 .site-header h1 {
-  color: white;
-  font-family: 'Inter', Arial, sans-serif;
+  color: #ffffff;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -23,10 +26,8 @@ body {
   text-transform: uppercase;
 }
 
-}
-
 .site-header .subtitle {
-  color: white;
+  color: #ffffff;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
   letter-spacing: 1.5px;
@@ -34,5 +35,35 @@ body {
   text-transform: none;
 }
 
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 25px;
+  text-align: center;
 }
 
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* GALLERY NOTE */
+.note {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* FOOTER */
+footer {
+  background: #1c1c1c;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
