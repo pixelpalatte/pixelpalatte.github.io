@@ -15,16 +15,24 @@ body {
 
 .site-header h1 {
   color: white;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 2px;
   margin: 0;
+  text-transform: uppercase;
+}
+
 }
 
 .site-header .subtitle {
   color: white;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
   letter-spacing: 1.5px;
   margin-top: 16px;
-  text-transform: lowercase;
+  text-transform: none;
 }
+
+}
+
