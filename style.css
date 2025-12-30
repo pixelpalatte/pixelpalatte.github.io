@@ -362,6 +362,48 @@ html, body {
     max-width: 100% !important;
   }
 }
+/* ===============================
+   FIX CUSTOMER REVIEWS LAYOUT
+   =============================== */
+
+#reviews {
+  text-align: center;
+}
+
+#reviews .reviews-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+/* Each review card */
+#reviews .review-card {
+  flex: 1 1 0;
+  max-width: 33%;
+  text-align: center;
+}
+
+/* Ensure long review does not break layout */
+#reviews .review-card p {
+  text-align: left;
+}
+
+/* ---------- MOBILE FIX ---------- */
+@media (max-width: 768px) {
+  #reviews .reviews-wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #reviews .review-card {
+    max-width: 100%;
+  }
+}
+
 
 
 
