@@ -79,5 +79,95 @@ footer {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+/* ================= HEADER STYLING ================= */
+
+.site-header {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #b31217, #ff512f, #f09819);
+  color: white;
+  padding: 40px 20px;
+}
+
+.logo-wrap {
+  max-width: 600px;
+}
+
+/* ================= LOGO ================= */
+
+.logo-img {
+  width: 120px;
+  margin-bottom: 18px;
+  opacity: 0;
+  transform: scale(0.85);
+  animation: logoReveal 1.4s ease-out forwards;
+}
+
+/* ================= TEXT ================= */
+
+.site-title {
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: textReveal 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0;
+  animation: textReveal 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes logoReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 32px;
+  }
+
+  .logo-img {
+    width: 95px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
 
 
