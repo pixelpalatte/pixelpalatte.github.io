@@ -328,6 +328,41 @@ html, body {
     grid-template-columns: 1fr;
   }
 }
+/* ===== HARD FIX: FORCE ALL REVIEWS IN ONE LINE ===== */
+
+#reviews .reviews-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 30px !important;
+  flex-wrap: nowrap !important;   /* THIS IS THE KEY */
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+#reviews .review-card {
+  width: 300px !important;
+  max-width: 300px !important;
+  flex: 0 0 300px !important;     /* LOCK WIDTH */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Mobile: allow stacking */
+@media (max-width: 900px) {
+  #reviews .reviews-wrapper {
+    flex-wrap: wrap !important;
+  }
+
+  #reviews .review-card {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+}
+
 
 
 
