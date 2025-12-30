@@ -205,9 +205,14 @@ footer {
 
 .card {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
 }
 
 .card img {
@@ -326,9 +331,15 @@ html, body {
   line-height: 1.6;
 }
 
-.review-card p {
-  font-size: 14.5px;
-  color: #444;
+.review-card p::before {
+  content: "“";
+  font-size: 40px;
+  color: #ccc;
+  display: block;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+
 }
 
 .review-card strong {
@@ -343,6 +354,13 @@ html, body {
     flex-wrap: wrap;
   }
 }
+h1, h2 {
+  letter-spacing: 1px;
+}
+.section {
+  padding: 90px 20px;
+}
+
 
 
 
