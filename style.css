@@ -286,5 +286,25 @@ html, body {
   font-size: 18px;
   color: #ff512f;
 }
+/* ---------- SIGNATURE LINE ---------- */
+.signature-line {
+  text-align: center;
+  margin: 60px auto 30px;
+  max-width: 700px;
+}
+
+.signature-line .divider {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #ff512f;
+  margin: 0 auto 16px;
+}
+
+.signature-line p {
+  font-size: 14px;
+  color: #555;
+}
+
 
 
